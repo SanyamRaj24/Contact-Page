@@ -1,0 +1,105 @@
+.containerDiv{
+    height: 95vh;
+    width: 60vw;
+    background-color: white;
+    margin: auto;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 15px;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+.name{
+    width: 100%;
+    display: flex;
+}
+
+.firstName{
+    width: 50%;
+    margin-right: 6.5px;
+}
+
+.lastName{
+    width: 50%;
+    margin-left: 6.5px;
+}
+
+.asterisk::after {
+    content: " *";
+    color: green;
+}
+
+.radios{
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* Define two columns with equal width */
+    width: 100%;
+}
+
+.radio1{
+    width: 98%;
+    margin-right: 6.5px;
+    padding: 6px 10px 6px 45px;
+    border-radius: 5px;
+}
+
+.radio2{
+    width: 98%;
+    margin-left: 6.5px;
+    padding: 6px 10px 6px 45px;
+    border-radius: 5px;
+}
+
+.bordering{
+    border: 1px groove #90EE90;
+}
+
+.message{
+    color: red;
+}
+
+@media only screen and (max-width: 600px) {
+    .name{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+        
+    .firstName{
+        width: 100%;
+        margin-right: 0px;
+    }
+        
+    .lastName{
+        width: 100%;
+        margin-left: 0px;
+    }
+        
+    .radios{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+        
+    .radio1{
+        width: 100%;
+        margin-right: 0px;
+    }
+        
+    .radio2{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 7px;
+    }
+  }
